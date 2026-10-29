@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@layer base {
+  :root { color-scheme: dark; }
+  body {
+    background-color: #050a14;
+    background-image:
+      linear-gradient(rgba(34, 211, 238, 0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(34, 211, 238, 0.04) 1px, transparent 1px),
+      radial-gradient(1000px 500px at 85% -10%, rgba(34, 211, 238, 0.09), transparent 60%),
+      radial-gradient(800px 500px at -10% 110%, rgba(217, 70, 239, 0.06), transparent 60%);
+    background-size: 36px 36px, 36px 36px, auto, auto;
+    background-attachment: fixed;
+    color: #e2e8f0;
+  }
+  h1, h2, h3 { font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+  ::selection { background: rgba(34, 211, 238, 0.3); color: #fff; }
+  input, select, textarea { color-scheme: dark; }
+}
+
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-track { background: #050a14; }
+::-webkit-scrollbar-thumb { background: #1e3a4a; border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: #22d3ee; }
